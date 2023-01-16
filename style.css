@@ -76,6 +76,11 @@ font-weight: bold;
     display: flex;
     gap: 40px;
 }
+
+.nav--list{
+    display: flex;
+    gap: 30px;
+}
 a{
     text-decoration: none;
     color: black;
@@ -178,7 +183,28 @@ background-color: rgb(8, 142, 245);
     font-style: italic;
     color: rgb(132, 129, 126);
 }
+.menu{
+    height: 30px;
+    width: 30px;
+    -background-color: #fff;
+    position: absolute;
+    left: 150px;
+    margin-top: 5px;
+    display: none;
+}
 
+.menu--list{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+   
+   
+}
+.nav--bar p{
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width:600px) {
 
     .container{
@@ -281,4 +307,35 @@ background-color: rgb(8, 142, 245);
 .child2 p{
     font-size: 15px;
 }
+
+.nav--list{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    gap: 10px;
+    right:90px;
+    text-align: center;
+    width: 100%;
+     
 }
+.nav--bar p{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+.menu{
+    display: block;
+   
+}
+
+.active{
+    display: block;
+   
+     
+   
+}
+
+
+        }

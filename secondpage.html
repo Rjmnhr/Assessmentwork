@@ -11,10 +11,17 @@
     <div class="container2">
         <div class="nav--bar">
             <img id="logo" src="Logo.png" alt="" height="30px" width="100px">
-            <a href="#">About</a>
-            <a href="#">Products</a>
-            <a href="#">contact</a>
+            <div class="nav--list" id="navi--list">
+            <a href="#"><p>About</p></a>
+            <a href="#"><p>Products</p></a>
+            <a href="#"><p>contact</p></a></div>
+            <div class="menu" id="togglebutton">
+                <div class="menu--list"> </div>
+                <div class="menu--list"> </div>
+                <div class="menu--list"> </div>
+            </div>
         </div>
+        
         <div class="container--sub">
         <div class="right--container1">
 <img src="image 2.png" alt="">
@@ -59,4 +66,12 @@
     
     
 </body>
+
+<script>
+    const togglebutton=document.getElementById('togglebutton');
+    const naviList=document.getElementById('navi--list');
+    togglebutton.addEventListener('click', () =>{
+        naviList.classList.toggle('active')
+    })
+</script>
 </html>
