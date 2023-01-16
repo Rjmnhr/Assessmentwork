@@ -138,9 +138,41 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 h4{
     padding: 0;
     margin: 0;
+    color: gray;
+    font-style: italic;
     
 }
 
+.icons{
+    -background-color: black;
+    display:flex ;
+    gap: 10px;
+    
+    padding-top: 10px;
+}
+
+div[class^='block']{
+    -background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+div[class^='block']:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.block--3{
+    background-color: rgb(241, 24, 194);
+    }
+    
+.block--1{
+    background-color: rgb(252, 80, 46);
+    }
+.block--2{
+background-color: rgb(8, 142, 245);
+}
 
 .child2 h4{
     font-style: italic;
@@ -153,6 +185,7 @@ h4{
         display: flex;
         flex-direction: column-reverse;
         height: auto;
+        overflow: none;
     }
 
     .right--container{
@@ -169,7 +202,7 @@ h4{
 
     .left--container{
         width: 600px;
-        -border: 1px solid rgb(230, 14, 14);
+       
         margin: 0;
         height:auto ;
         padding: 0;
@@ -185,7 +218,7 @@ h4{
         padding-left: 0;
         margin-left: 0;
         padding:25px;
-        -border: 1px solid black ;
+       
         width:300px;
         
        
@@ -203,5 +236,49 @@ h4{
         font-size: 10px;
     }
 
+.container--sub{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.nav--bar{
+    width: 600px;
+}
+.right--container1{
+    width: 600px;
+    -height: 300px;
+}
+
+.right--container1 img{
+    width: 600px;
+    height: 400px;
+}
+
+.left--container1{
+    padding: 0;
+    margin: 0;
+    
+    width: 600px;
+    height: 450px;
+    position: relative;
+   top: -320px;
+    background-color:white;
+    border-radius: 10px;
+    
+}
+
+.child2{
+    position: none;
+    top: 16px;
+    height: 450px;
+   
+    background-color: #fff;
+    
+    padding-top: 20px;
+    width: 450px;
+}
+.child2 p{
+    font-size: 15px;
+}
 }
