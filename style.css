@@ -148,33 +148,57 @@ h4{
 }
 
 @media screen and (max-width:600px) {
-    .right--container img{
-        width: 600px;
-        height: 400px;
-        float: left;
-        position: relative;
-        left: -200px;
-    }
-    .right--container{
-        height: 400px;
-        width:500px ;
-        border: 1px solid black;
-    }
-    .left--container{
-        height: 500px;
-        width: 600px;
-font-size: small;
-        float: right;
-        position: relative;
-        top: 100px;
-        border: 1px solid black;
 
-        
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
     }
-    .left--container h1{
-        font-size: large;
+
+    .right--container{
+        width:300px;
+        height: 300px;
+        border: 1px solid black;
     }
-    .left--container button{
+
+    .right--container img{
+        width: 300px;
+        height: 300px;
+        display: block;
+    }
+
+    .left--container{
+        width: 300px;
+        -border: 1px solid rgb(230, 14, 14);
+        margin: 0;
+        height:auto ;
+        padding: 0;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        position :absolute;
+        top: 290px;
+        background-color: #fff;
+
+    }
+
+    .child{
+        padding-left: 0;
+        margin-left: 0;
+        padding:5px;
+       
+    }
+    
+    .container h1{
+        font-size: 40px
+    }
+
+    .child button{
+        font-size: 15px;
+    }
+
+    .child p{
         font-size: 10px;
     }
+
+
 }
