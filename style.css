@@ -327,10 +327,10 @@ background-color: rgb(228, 215, 215);
     top: -18px;
     left:120px;
     text-align: center;
-    border-radius: 5px;
+    -border-radius: 5px;
 
     font-size: 16px;  
-        border: none;
+        border-style: none;
         outline: none;
         
        
